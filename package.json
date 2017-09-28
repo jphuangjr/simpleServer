@@ -1,0 +1,29 @@
+{
+  "name": "simpleserver",
+  "version": "1.0.0",
+  "description": "A simple node server built with express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/www.github.com/jphuangjr.git"
+  },
+  "keywords": [
+    "simpleserver",
+    "server",
+    "node"
+  ],
+  "author": "Joshua Huang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/www.github.com/jphuangjr/issues"
+  },
+  "homepage": "https://github.com/www.github.com/jphuangjr#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "fs": "0.0.1-security"
+  }
+}
