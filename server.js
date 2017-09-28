@@ -22,6 +22,13 @@ app.post("/add", function(req, res) {
   res.send(testData);
 });
 
+app.delete("/delete/:id", function(req, res) {
+  testData = testData.filter(function(val) {
+    return val.id !== req.params.id
+  });
+  res.send(testData);
+});
+
 app.listen(port, function() {
   console.log("******** Listening on port:", port,"*********");
 });
