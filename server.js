@@ -1,8 +1,6 @@
 var port = 4568;
 
-var testData = [
-
-];
+var testData = [];
 
 var express = require('express');
 var bodyParser = require('body-parser');
@@ -17,7 +15,11 @@ app.get("/get", function(req, res){
 });
 
 app.post("/add", function(req, res) {
-
+  let data= {};
+  data.id = req.param('id');
+  data.email = req.param("email");
+  testData.push(data);
+  res.send(testData);
 });
 
 app.listen(port, function() {
